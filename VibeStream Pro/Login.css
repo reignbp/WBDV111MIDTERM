@@ -1,0 +1,45 @@
+body{
+  background-color:#814141;
+}
+
+form{
+  margin-left: 500px;
+  padding-left: 60px;
+  margin-top: 150px;
+  border: 2px solid ##800020;
+  width: 280px;
+  height: 370px;
+  background-color: #FAEBEB;
+  border-radius: 15px;
+}
+#h1{
+  text-align: center;
+  margin-right: 60px;
+  font-size: 50px;
+}
+#inpt{
+  width: 190px;
+  height: 25px;
+  padding-left: 22px;
+}
+#inp{
+  width: 12px;
+}
+#Rm{
+  font-size: 15px;
+  padding-bottom: 80px;
+}
+button{
+  width: 200px;
+  height: 23px;
+  border-radius: 12px;
+  border: solid #A9968E;
+  background-color: #A9968E;
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+}
+a{
+  color: #A9968E;
+  opacity: 1px;
+}#42445A
