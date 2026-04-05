@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tickets</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+<h2>Nexus Nights</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="events.html">Events</a>
+<a href="tickets.html">Tickets</a>
+<a href="venue.html">Venue</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Admin</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h1>GET YOUR TICKETS</h1>
+
+<div class="card">
+<h2>1. Select Event</h2>
+<select id="event">
+<option>Neon Circuit</option>
+<option>Pixel Parade</option>
+</select>
+</div>
+
+<div class="card">
+<h2>2. Ticket Type</h2>
+<select id="tier">
+<option>Regular</option>
+<option>VIP</option>
+</select>
+</div>
+
+<div class="card">
+<h2>3. Your Info</h2>
+<input type="text" id="name" placeholder="Your Name">
+</div>
+
+<button onclick="generateQR()">GET QR CODE</button>
+
+<div id="qr"></div>
+
+</div>
+
+<script src="tickets.js"></script>
+
+</body>
+</html>
