@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Admin Login</h1>
+
+<div class="card">
+<input type="text" id="user" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<p id="error" style="color:red;"></p>
+
+</div>
+
+<script>
+function login() {
+let u = document.getElementById("user").value;
+let p = document.getElementById("pass").value;
+
+if(u === "admin" && p === "1234"){
+    localStorage.setItem("admin", "true");
+    window.location = "admin.html";
+} else {
+    document.getElementById("error").innerText = "Wrong login!";
+}
+}
+</script>
+
+</body>
+</html>

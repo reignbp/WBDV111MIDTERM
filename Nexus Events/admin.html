@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Admin Dashboard</h1>
+
+<button onclick="logout()">Logout</button>
+
+<div class="card">Tickets Sold: 1234</div>
+<div class="card">Capacity: 92%</div>
+
+</div>
+
+<script>
+if(localStorage.getItem("admin") !== "true"){
+    window.location = "login.html";
+}
+
+function logout(){
+    localStorage.removeItem("admin");
+    window.location = "login.html";
+}
+</script>
+
+</body>
+</html>
