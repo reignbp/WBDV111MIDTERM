@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luna Vista Resort</title>
+<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<nav>
+<h2>Luna Vista Resort</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="reserve.html">Reserve</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="carousel">
+<img src="home1.jpg" class="active">
+<img src="home2.jpg">
+<img src="home3.webp">
+</div>
+
+<div class="hero-overlay">
+<h1>Luna Vista Resort</h1>
+<p>Experience comfort and luxury by the sea.</p>
+<a href="reserve.html" class="btn">Book Now</a>
+</div>
+
+</section>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".carousel img");
+
+setInterval(() => {
+slides[index].classList.remove("active");
+index = (index + 1) % slides.length;
+slides[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>
