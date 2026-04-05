@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pick Date</title>
+  <link rel="stylesheet" href="pick date.css">
+</head>
+<body>
+<img src="logo.webp" alt="Velvet Crust Logo" width="100" height="100">
+<h1>Pick Your Schedule</h1>
+
+<div class="box">
+  <input type="date">
+  <input type="time">
+  <button onclick="saveDate()">Confirm</button>
+</div>
+
+<script>
+function saveDate(){
+  const date = document.querySelector("input[type='date']").value;
+  const time = document.querySelector("input[type='time']").value;
+
+  localStorage.setItem("date", date);
+  localStorage.setItem("time", time);
+
+  window.location.href = "confirm order.html";
+}
+</script>
+
+</body>
+</html>
