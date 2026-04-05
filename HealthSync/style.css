@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f2fe, #ffffff);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 3px solid #2563eb;
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.container {
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #2563eb;
+  box-shadow: 6px 6px 0 #2563eb;
+  max-width: 400px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #2563eb;
+}
+
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 2px solid #2563eb;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.badge {
+  background: #22c55e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #2563eb;
+  box-shadow: 8px 8px 0 #2563eb;
+  max-width: 400px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.step {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 20px;
+  background: white;
+  border: 2px solid #2563eb;
+  box-shadow: 10px 10px 0 #2563eb;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slot {
+  padding: 15px;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+}
+
+.slot:hover {
+  background: #dbeafe;
+}
+
+.slot.selected {
+  background: #2563eb;
+  color: white;
+}
+
+.slot.taken {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

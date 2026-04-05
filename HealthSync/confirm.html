@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confirm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+<h2>HealthSync</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="book.html">Book</a>
+<a href="staff.html">Staff</a>
+<a href="history.html">History</a>
+<a href="#" onclick="logout()">Logout</a>
+</div>
+</div>
+
+<div class="container">
+<h1>Appointment Confirmed</h1>
+<h3>Thank you for booking with HealthSync!</h3>
+<h4>Your appointment details are as follows:</h4>
+<p id="summary"></p>
+
+<button id="saveHistory">Save to History</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const summary = document.getElementById("summary");
+    summary.innerHTML =
+      "Specialty: " + localStorage.getItem("spec") + "<br>" +
+      "Doctor: " + localStorage.getItem("doc") + "<br>" +
+      "Date: " + localStorage.getItem("date") + "<br>" +
+      "Time: " + localStorage.getItem("time");
+
+    const btn = document.getElementById("saveHistory");
+    if(btn) btn.addEventListener("click", finish);
+  });
+</script>
+
+</body>
+</html>
