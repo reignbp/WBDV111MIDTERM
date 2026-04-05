@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FixIt Desk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>FIXIT_DESK</h2>
+    <button onclick="logout()">[ LOGOUT ]</button>
+</header>
+
+<div class="container">
+
+    <div class="sidebar">
+        <button onclick="newTicket()">+ OPEN_NEW_TICKET</button>
+
+        <h4>HISTORY_LOGS</h4>
+        <div id="ticketList"></div>
+    </div>
+
+    <div class="main">
+
+        <div id="chatBox" class="chat-box">
+            <p>> SYSTEM: INITIALIZING SUPPORT CHANNEL...</p>
+        </div>
+
+        <div class="input-area">
+            <select id="category">
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Network</option>
+            </select>
+
+            <input type="file" id="fileUpload">
+
+            <input type="text" id="message" placeholder="TYPE_MESSAGE_HERE...">
+
+            <button onclick="sendMessage()">EXECUTE_SEND</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
