@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SwiftCart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>SwiftCart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="menu">
+        <h3>Menu</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Account</li>
+        </ul>
+    </aside>
+
+    <main class="products">
+
+        <div class="product">
+            <img src="bookshop.jpg">
+            <h4>Days at the Morisaki Bookshop</h4>
+            <p>Php 549</p>
+            <button onclick="addToCart('Days at the Morisaki Bookshop',549)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="people.jpg">
+            <h4>Some People Need Killing</h4>
+            <p>Php 799</p>
+            <button onclick="addToCart('Some People Need Killing',799)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="educated.jpg">
+            <h4>Educated</h4>
+            <p>Php 159</p>
+            <button onclick="addToCart('Educated',159)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="coffee.jpg">
+            <h4>Before the Coffee Gets Cold</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('Before the Coffee Gets Cold',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="tales.jpg">
+            <h4>Tales from the Cafe</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('Tales from the Cafe',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="memory.jpg">
+            <h4>Before Your Memory Fades</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('Before Your Memory Fades',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="goodbye.jpg">
+            <h4>Before We Say Goodbye</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('Before We Say Goodbye',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="kindness.jpg">
+            <h4>Before We Forget Kindness</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('Before We Forget Kindness',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="family.jpg">
+            <h4>How to Kill Your Family</h4>
+            <p>Php 539</p>
+            <button onclick="addToCart('How to Kill Your Family',539)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="air.jpg">
+            <h4>When Breath Becomes Air</h4>
+            <p>Php 599</p>
+            <button onclick="addToCart('When Breath Becomes Air',599)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="silent.jpg">
+            <h4>The Silent Patient</h4>
+            <p>Php 549</p>
+            <button onclick="addToCart('The Silent Patient',549)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="1984.jpg">
+            <h4>1984</h4>
+            <p>Php 349</p>
+            <button onclick="addToCart('1984',349)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="mockingbird.jpg">
+            <h4>To Kill a Mockingbird</h4>
+            <p>Php 249</p>
+            <button onclick="addToCart('To Kill a Mockingbird',249)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cafe.jpg">
+            <h4>Days at the Torunka Cafe</h4>
+            <p>Php 459</p>
+            <button onclick="addToCart('Days at the Torunka Cafe',459)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="more.jpg">
+            <h4>More Days at the Morisaki Bookshop</h4>
+            <p>Php 459</p>
+            <button onclick="addToCart('More Days at the Morisaki Bookshop',459)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="perfect.jpg">
+            <h4>The Perfect Divorce</h4>
+            <p>Php 599</p>
+            <button onclick="addToCart('The Perfect Divorce',599)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="dog.jpg">
+            <h4>The Curious Incident of the Dog in the Night-Time</h4>
+            <p>Php 899</p>
+            <button onclick="addToCart('The Curious Incident of the Dog in the Night-Time',899)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="sea.jpg">
+            <h4>The Convenience Store by the Sea</h4>
+            <p>Php 559</p>
+            <button onclick="addToCart('The Convenience Store by the Sea',559)">Add to Cart</button>
+        </div>
+
+    </main>
+
+    <aside class="cart-preview">
+        <h3>Cart</h3>
+        <div id="cart-items"></div>
+    </aside>
+
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

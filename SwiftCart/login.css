@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+.split {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
