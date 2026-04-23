@@ -1,1 +1,104 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Crust - Custom Cake Designs</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.webp" alt="Velvet Crust Logo" width="100" height="100">
+    <p>Premium Custom Cakes Handcrafted for Your Special Moments</p>
+</header>
+
+<section class="workflow">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step" onclick="location.href='browse designs.html'">Browse Designs</div>
+        <div class="arrow">→</div>
+        <div class="step" onclick="location.href='customize flavors.html'">Customize Flavors</div>
+        <div class="arrow">→</div>
+        <div class="step" onclick="location.href='pick date.html'">Pickup Date</div>
+        <div class="arrow">→</div>
+        <div class="step" onclick="location.href='confirm order.html'">Confirm Order</div>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Our Cake Collection</h2>
+
+    <div class="cake-grid">
+        <div class="cake-card">
+            <img src="velvet.jpg" alt="Classic Velvet" width="300" height="250">
+            <div class="cake-info">
+                <h3>Classic Velvet</h3>
+                <p>Rich, velvety texture with elegant design. Perfect for any celebration.</p>
+                <button onclick="selectCake('Classic Velvet')">Customize</button>
+            </div>
+        </div>
+
+        <div class="cake-card chocolate">
+            <img src="choco.jpg" alt="Chocolate Dream" width="300" height="250">
+            <div class="cake-info">
+                <h3>Chocolate Dream</h3>
+                <p>Decadent chocolate layers with creamy ganache filling.</p>
+                <button onclick="selectCake('Chocolate Dream')">Customize</button>
+            </div>
+        </div>
+
+        <div class="cake-card strawberry">
+            <img src="berry.jpg" alt="Berry Bliss" width="300" height="250">
+            <div class="cake-info">
+                <h3>Berry Bliss</h3>
+                <p>Fresh strawberries with whipped cream and sponge cake.</p>
+                <button onclick="selectCake('Berry Bliss')">Customize</button>
+            </div>
+        </div>
+
+        <div class="cake-card vanilla">
+            <img src="vanilla.jpg" alt="Vanilla Elegance" width="300" height="250">
+            <div class="cake-info">
+                <h3>Vanilla Elegance</h3>
+                <p>Timeless vanilla cake with premium buttercream frosting.</p>
+                <button onclick="selectCake('Vanilla Elegance')">Customize</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bakery-info">
+    <div class="floating-container">
+        <div class="glassmorphism-card">
+            <div class="tabs">
+                <div class="tab active">Orders</div>
+                <div class="tab">Design</div>
+                <div class="tab">Pickup Schedule</div>
+            </div>
+            
+            <h3>Manage Your Orders</h3>
+            <p>Track your custom cake orders, finalize your designs, and schedule your perfect pickup time.</p>
+            
+            <div class="button-group">
+                <button class="cream-button" onclick="viewOrders()">View Orders</button>
+                <button class="cream-button primary" onclick="location.href='browse designs.html'">Start New Order</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+function selectCake(cake){
+    localStorage.setItem("cake", cake);
+    location.href = "customize flavors.html";
+}
+
+function viewOrders(){
+    alert("Feature coming soon!");
+}
+</script>
+
+</body>
+</html>
