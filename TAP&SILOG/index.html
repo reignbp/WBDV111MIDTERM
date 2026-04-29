@@ -2,53 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TAP & SILOG - Silog Meals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap & Silog</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <header>
+    <h2>Tap & Silog</h2>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="btn">Order Now</a>
+    </nav>
+  </header>
 
-<h2 class="title">SILOG MEALS</h2>
-
-<div class="menu-container">
-
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>PORK TAPA SILOG</h3>
-    <div class="card-footer">
-      <button onclick="addToCart('Pork Tapa Silog',85)">🛒</button>
-      <span>₱85.00</span>
+  <section class="hero" id="home">
+    <div>
+      <h1>Busog sa Sarap, Sulit sa Presyo!</h1>
+      <p>Welcome to Tap & Silog — your go-to tapsihan for delicious silog meals, refreshing drinks, and fast online ordering.</p>
+      <a href="#menu" class="btn">View Menu</a>
     </div>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>PORK TOCINO SILOG</h3>
-    <div class="card-footer">
-      <button onclick="addToCart('Pork Sisig Silog',85)">🛒</button>
-      <span>₱85.00</span>
+    <div>
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Silog Meal">
     </div>
-  </div>
+  </section>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>PORK CHOP SILOG</h3>
-    <div class="card-footer">
-      <button onclick="addToCart('Pork Chop Silog',105)">🛒</button>
-      <span>₱105.00</span>
+  <section id="menu">
+    <h2 class="title">Best Sellers</h2>
+    <div class="cards">
+      <div class="card"><h3>Tapsilog</h3><p>Classic beef tapa with garlic rice & egg.</p><p class="price">₱99</p></div>
+      <div class="card"><h3>Tocilog</h3><p>Sweet tocino with garlic rice & egg.</p><p class="price">₱95</p></div>
+      <div class="card"><h3>Longsilog</h3><p>Juicy longganisa with garlic rice & egg.</p><p class="price">₱89</p></div>
+      <div class="card"><h3>Iced Tea</h3><p>Refreshing house blend drink.</p><p class="price">₱35</p></div>
     </div>
-  </div>
+  </section>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>FRIED CHICKEN SILOG</h3>
-    <div class="card-footer">
-      <button onclick="addToCart('Fried Chicken Silog',105)">🛒</button>
-      <span>₱105.00</span>
-    </div>
-  </div>
+  <section class="about" id="about">
+    <h2 class="title">About Us</h2>
+    <p>Tap & Silog started with one mission: serve affordable and satisfying Filipino comfort food with convenience.</p>
+  </section>
 
-</div>
+  <section class="contact" id="contact">
+    <h2 class="title">Contact Us</h2>
+    <p>Quezon City, Philippines</p>
+    <p>09XX-XXX-XXXX</p>
+  </section>
 
-<script src="index.js"></script>
+  <footer>© 2026 Tap & Silog. All Rights Reserved.</footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
