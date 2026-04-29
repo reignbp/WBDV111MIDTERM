@@ -1,9 +1,5 @@
-let cart = [];
+// index.js
 
-function addToCart(item, price) {
-  cart.push({ item, price });
-
-  alert(item + " added to cart!");
-
-  console.log("Cart:", cart);
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("show");
 }
